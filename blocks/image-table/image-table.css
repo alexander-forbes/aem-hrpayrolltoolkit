@@ -1,0 +1,50 @@
+main .image-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main .image-table .icon-box {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #124e57;
+  border-radius: 50px;
+  background: #fff;
+  text-align: center;
+  line-height: 0.8;
+}
+
+main .image-table .icon-box span.icon {
+  color: #124e57;
+}
+
+main .image-table .text-box {
+  margin-left: 85px;
+}
+
+main .image-table img {
+  border-radius: 50%;
+}
+
+main .image-table .image-table-row {
+  padding-bottom: 30px;
+}
+
+@media (min-width: 900px) {
+  main .image-table {
+    flex-direction: row;
+  }
+
+  main .image-table img {
+    width: 350px;
+  }
+
+  main .image-table-rows {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

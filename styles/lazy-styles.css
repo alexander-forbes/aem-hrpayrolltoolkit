@@ -1,0 +1,179 @@
+/* below the fold CSS goes here */
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+
+@font-face {
+  font-family: boxicons;
+  font-weight: 400;
+  font-style: normal;
+  src: url("/fonts/boxicons.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: bootstrap-icons;
+  font-weight: normal;
+  font-style: normal;
+  src: url("/fonts/bootstrap-icons.woff2") format("woff2");
+  font-display: swap;
+}
+
+span.icon {
+  display: block;
+  margin: 30px 0 20px;
+  padding: 0;
+  height: 32px;
+  font-family: boxicons;
+  font-style: normal;
+  font-size: 32px;
+}
+
+/* boxicons */
+span.icon-linkedin::before {
+  content: "\e944";
+}
+
+span.icon-facebook::before {
+  content: "\e926";
+}
+
+span.icon-twitter::before {
+  content: "\e979";
+}
+
+span.icon-instagram::before {
+  content: "\e939";
+}
+
+span.icon-money::before {
+  content: "\edf6";
+}
+
+span.icon-calendar::before {
+  content: "\ea15";
+}
+
+span.icon-question-mark::before {
+  content: "\ee33";
+}
+
+/* bootstrap icons */
+
+span.icon-person-video2::before {
+  font-family: bootstrap-icons;
+  content: "\f678";
+}
+
+span.icon-safe::before {
+  font-family: bootstrap-icons;
+  content: "\f65a";
+}
+
+span.icon-exclamation::before {
+  font-family: bootstrap-icons;
+  content: "\f33c";
+}
+
+span.icon-bi-graph-up-arrow::before {
+  font-family: bootstrap-icons;
+  content: "\F673";
+}
+
+span.icon-bi-calendar-date::before {
+  font-family: bootstrap-icons;
+  content: "\F1E4";
+}
+
+span.icon-bi-geo-alt::before {
+  font-family: bootstrap-icons;
+  content: "\F3E8";
+}
+
+span.icon-bi-cash-stack::before {
+  font-family: bootstrap-icons;
+  content: "\F246";
+}
+
+span.icon-life-preserver::before {
+  font-family: bootstrap-icons;
+  content: "\f467";
+}
+
+span.icon-envelope::before {
+  font-family: bootstrap-icons;
+  content: "\F32F";
+}
+
+span.icon-phone::before {
+  font-family: bootstrap-icons;
+  content: "\F4E7";
+}
+
+span.icon-door-open::before {
+  font-family: bootstrap-icons;
+  content: "\F308";
+}
+
+span.icon-chevron-down::before {
+  font-family: bootstrap-icons;
+  content: "\F282";
+}
+
+.cards.image.wide p.button-container > a::before {
+  font-family: bootstrap-icons;
+  content: "\f138  ";
+}
+
+.retirement-picture ul li::marker {
+  font-family: bootstrap-icons;
+  content: "\F234";
+}
+
+.retirement-picture ul li {
+  padding-left: 5px;
+}
+
+/* Back to top button */
+.back-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: var(--color-tangerine);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top:focus {
+  text-decoration: none;
+}
+
+.back-to-top .bi-arrow-up-short {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 2rem;
+  color: var(--color-white);
+}
+
+.back-to-top .bi-arrow-up-short::before {
+  font-family: bootstrap-icons;
+  content: "\F145";
+  font-style: normal;
+}
+
+.back-to-top:hover {
+  background: var(--color-orange);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}

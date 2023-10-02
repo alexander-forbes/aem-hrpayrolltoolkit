@@ -1,0 +1,131 @@
+main .tabs .tabs-content[aria-hidden="true"] {
+  display: none;
+  visibility: hidden;
+}
+
+main .tabs-content img {
+  border-radius: 50%;
+}
+
+main .tabs {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 992px) {
+  main .tabs {
+    grid-template-columns: 25% 1fr;
+  }
+}
+
+main .tabs-links a {
+  border: 0;
+  padding: 15px;
+  transition: 0.3s;
+  color: #777;
+  border-radius: 0;
+  border-right: 0;
+  font-weight: 600;
+  font-size: 18px;
+  display: block;
+}
+
+@media (min-width: 992px) {
+  main .tabs-links a {
+    border-right: 2px solid var(--color-grey);
+    padding: 12px 15px 12px 0;
+  }
+}
+
+main .tabs-links {
+  border-bottom: 1px solid var(--color-dark-teal);
+}
+
+main .tabs-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  main .tabs-links ul {
+    padding: 15px;
+  }
+}
+
+main .tabs-links a:hover {
+  color: var(--link-hover-color);
+}
+
+main .tabs-links li[aria-selected="true"] a {
+  color: var(--color-white);
+  background-color: var(--color-dark-teal);
+}
+
+@media (min-width: 992px) {
+  main .tabs-links li[aria-selected="true"] a {
+    color: var(--link-color);
+    border-color: var(--link-color);
+    background-color: unset;
+  }
+}
+
+main .section.fragment-container:has(.tabs-wrapper) > .default-content-wrapper h3 {
+  color: var(--color-dark-teal);
+}
+
+@media (min-width: 992px) {
+  main .tabs {
+    flex-direction: row;
+  }
+
+  main .tabs-content img {
+    float: right;
+  }
+
+  main .tabs-links {
+    border-bottom: 0;
+  }
+
+  main .tabs-contents {
+    min-width: 70%;
+    padding-left: 20px;
+  }
+}
+
+/* tabs horizontal variation */
+main .tabs.horizontal {
+  grid-template-columns: 1fr;
+}
+
+main .tabs.horizontal .tabs-links a {
+  margin-bottom: -2px;
+}
+
+@media (min-width: 992px) {
+  main .tabs.horizontal .tabs-links > ul {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid var(--color-tab-border-grey);
+    padding-bottom: unset;
+  }
+
+  main .tabs.horizontal .tabs-links {
+    border-bottom: unset;
+  }
+
+  main .tabs.horizontal .tabs-links a {
+    margin-bottom: -2px;
+    border-right: unset;
+    padding-left: 12px;
+  }
+
+  main .tabs.horizontal .tabs-links li[aria-selected="true"] a {
+    border-bottom: 2px solid var(--link-color);
+    color: unset;
+    background-color: unset;
+  }
+
+  main .tabs.horizontal .tabs-links li[aria-selected="false"] a {
+    border-bottom: 2px solid transparent;
+  }
+}

@@ -1,0 +1,162 @@
+/* block specific CSS goes here */
+main .hero-wrapper {
+  overflow-x: clip;
+}
+
+main .section.hero-container .hero-wrapper {
+  max-width: 100%;
+}
+
+main .hero-container {
+  padding: 0;
+  height: var(--header-background-height);
+  background-color: unset;
+}
+
+main .hero {
+  position: relative;
+}
+
+main:has(.hero) {
+  margin-top: 0;
+}
+
+main .hero h1,
+main .hero h2 {
+  font-weight: normal;
+  max-width: 768px;
+  z-index: 2;
+}
+
+main .hero h1 {
+  font-size: var(--heading-font-size-xl);
+  line-height: 36px;
+  color: var(--color-white);
+}
+
+main .hero h2 {
+  font-size: 1.125rem;
+  line-height: 24px;
+  margin-bottom: 30px;
+  max-width: var(--hero-description-width);
+  color: var(--overlay-background-color);
+}
+
+@media (min-width: 768px) {
+  main .hero h1 {
+    max-width: var(--hero-description-width);
+    margin: 0 0 0.208em;
+    font-size: var(--heading-font-size-xxxl);
+    line-height: 56px;
+  }
+
+  main .hero h2 {
+    max-width: var(--hero-description-width);
+    margin-bottom: 1.25em;
+    font-size: 1.25rem;
+  }
+}
+
+main .hero picture {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+
+main .hero picture::after {
+  content: "";
+  background: rgb(0 0 0 / 10%);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+@media (min-width: 1024px) {
+  main .hero picture {
+    position: fixed;
+    height: var(--header-background-height);
+  }
+}
+
+main .hero img {
+  object-fit: cover;
+  width: 100%;
+  height: 70vh;
+  object-position: bottom center;
+}
+
+@media (min-width: 768px) {
+  main .hero img {
+    height: 70vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .hero img {
+    height: 1080px;
+  }
+}
+
+@media (min-width: 900px) {
+  main .hero h1 {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 1100px) {
+  main .hero h1,
+  main .hero h2 {
+    max-width: 380px;
+  }
+}
+
+main .hero > div {
+  position: relative;
+}
+
+main .hero > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: var(--header-background-height);
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  main .hero > div > div {
+    max-width: var(--max-width-small);
+  }
+}
+
+@media (min-width: 768px) {
+  main .hero > div > div {
+    max-width: var(--max-width-medium);
+  }
+}
+
+@media (min-width: 992px) {
+  main .hero > div > div {
+    max-width: var(--max-width-large);
+  }
+}
+
+@media (min-width: 1200px) {
+  main .hero > div > div {
+    max-width: var(--max-width-xlarge);
+  }
+}
+
+@media (min-width: 1400px) {
+  main .hero > div > div {
+    max-width: var(--max-width-xxlarge);
+  }
+}

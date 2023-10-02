@@ -1,0 +1,8 @@
+user-agent: *
+allow: /
+
+disallow: /common/
+disallow: /tools/
+disallow: /drafts/
+
+sitemap: https://hrpayrolltollkit.alexforbes.com/sitemap-index.xml
