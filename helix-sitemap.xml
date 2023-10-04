@@ -2,7 +2,7 @@ version: 1
 
 sitemaps:
   seo:
-    origin: https://hrpayrolltoolkit.alexforbes.com
+    origin: https://toolkit.alexforbes.com
     lastmod: YYYY-MM-DD
     default: en-US
     languages:
