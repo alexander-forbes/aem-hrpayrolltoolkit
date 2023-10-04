@@ -5,4 +5,4 @@ disallow: /common/
 disallow: /tools/
 disallow: /drafts/
 
-sitemap: https://hrpayrolltollkit.alexforbes.com/sitemap-index.xml
+sitemap: https://toolkit.alexforbes.com/sitemap-index.xml
